@@ -1,0 +1,23 @@
+# SSH keys and credentials
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.p12
+*.pfx
+
+# Environment/config secrets
+.env
+.env.*
+*.secret
+
+# OS/editor files
+.DS_Store
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.log~

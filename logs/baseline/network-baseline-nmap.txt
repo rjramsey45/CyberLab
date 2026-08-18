@@ -1,0 +1,44 @@
+# CyberLab Network Baseline
+
+## Date
+August 15, 2026
+
+## Target
+192.168.64.2
+
+## Host Discovery
+- Host reachable from Mac
+- ICMP ping successful
+- Nmap required -Pn because default host discovery reported host as down
+
+## Nmap Service Scan
+
+Command:
+nmap -Pn -sV 192.168.64.2
+
+Result:
+- 22/tcp open
+- SSH
+- OpenSSH 9.6p1 Ubuntu 3ubuntu13.18
+- OS identified as Linux
+
+## TCP Port Scan
+
+Command:
+nmap -Pn 192.168.64.2
+
+Result:
+- 22/tcp open
+- 999 TCP ports filtered
+
+## Security Observation
+
+Only SSH is externally reachable from the Mac during the baseline scan.
+
+The remaining scanned TCP ports returned no response and were reported as filtered.
+
+## Purpose
+
+This scan establishes a network exposure baseline for CyberLab.
+
+Future changes to listening services or firewall rules can be compared against this baseline.
