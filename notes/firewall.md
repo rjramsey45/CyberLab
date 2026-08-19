@@ -31,7 +31,9 @@ TCP port 22 is allowed for remote administration.
 ## Validation Commands
 
 sudo ufw status verbose
+
 sudo ufw status numbered
+
 sudo ss -tulpn
 
 ## Security Objective
