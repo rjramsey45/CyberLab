@@ -102,3 +102,22 @@
 - Apache access logging: working
 - Apache error logging: working
 - Web server log analysis script: working
+
+## Phase 4 — Web Application Security
+
+### Flask Application
+
+- Created isolated Python virtual environment
+- Installed Flask 3.1.3
+- Created CyberLab Flask web application
+- Created `/`, `/login`, `/search`, and `/admin` routes
+- Implemented GET and POST request handling
+- Accepted login form data using `request.form`
+- Implemented basic authentication logic
+- Tested successful authentication with curl
+- Tested failed authentication attempts with curl
+- Observed HTTP 200 responses for successful authentication
+- Observed HTTP 401 responses for failed authentication
+- Analyzed Flask application server logs
+- Correlated HTTP methods, timestamps, paths, and status codes
+- Documented application architecture and security objectives
